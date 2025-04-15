@@ -24,7 +24,7 @@ connectDB();
 
 const allowedOrigins = [
     process.env.FRONT_END_URL,
-    'https://cleancom-k4kf.vercel.app'
+    'https://cleancom-backend-production.up.railway.app'
 ]
 
 app.use(cookieParser());
