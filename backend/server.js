@@ -23,15 +23,15 @@ connectDB();
 
 
 const allowedOrigins = [
-    process.env.FRONT_END_URL,
-    'https://cleancom-backend-production.up.railway.app'
+
+    'https://cleancom-k4kf.vercel.app'
 ]
 
 app.use(cookieParser());
 // app.use(cors({ origin: process.env.FRONT_END_URL, credentials: true }));
 app.use(
     cors({
-      origin: allowedOrigins,
+      origin: 'https://cleancom-k4kf.vercel.app',
       credentials: true,
       allowedHeaders: ["Content-Type", "Authorization"],
       methods: ["GET", "POST", "PUT", "DELETE"],
