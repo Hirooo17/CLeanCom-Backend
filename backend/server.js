@@ -11,6 +11,8 @@ import { fileURLToPath } from 'url';
 import path from 'path';  
 import adminRouter from "./routes/admin.routes.js";
 import adminDataRouter from "./routes/admin.data.route.js";
+import CommunityHierarchy from "./model/CommunityHierarchy.js";
+import Communityrouter from "./routes/community.h.routes.js";
 
 const app = express();
 
@@ -55,6 +57,7 @@ app.use('/api/user', userRouter);
 app.use('/api/trash-reports', trashReporRouter );
 app.use('/api/admin', adminRouter);
 app.use('/api/admin-data', adminDataRouter);
+app.use('/api/community-hierarchy', Communityrouter);
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
