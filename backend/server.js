@@ -33,7 +33,7 @@ app.use(cookieParser());
 // app.use(cors({ origin: process.env.FRONT_END_URL, credentials: true }));
 app.use(
     cors({
-      origin: '*' ,
+      origin: true ,
       credentials: true,
       allowedHeaders: ["Content-Type", "Authorization"],
       methods: ["GET", "POST", "PUT", "DELETE"],
